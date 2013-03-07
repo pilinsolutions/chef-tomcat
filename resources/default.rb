@@ -33,7 +33,7 @@ attribute :http_port, :kind_of => Integer, :default => 8080
 attribute :ajp_port, :kind_of => Integer, :default => 8009
 attribute :ssl_port, :kind_of => Integer, :default => 8443
 attribute :shutdown_port, :kind_of => Integer, :default => 8005
-attribute :session_timeout, :kind_of => String, :default => 30
+attribute :session_timeout, :kind_of => Integer, :default => 30
 attribute :host_name, :kind_of => String, :default => "localhost"
 attribute :unpack_wars, :equal_to => [true, false], :default => true
 attribute :auto_deploy, :equal_to => [true, false], :default => true
