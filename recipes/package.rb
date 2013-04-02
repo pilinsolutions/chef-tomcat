@@ -39,7 +39,7 @@ unless platform? ["debian", "ubuntu"]
   Chef::Application::fatal!("This recipe only supports Ubuntu or Debian")
 end
 
-tomcat_pkgs = [ "tomcat#{version}", "tomcat#{version}-admin"]
+tomcat_pkgs = [ "tomcat#{version}", "tomcat#{version}-admin", "libtcnative-1"]
 
 
 tomcat_pkgs.each do |pkg|
